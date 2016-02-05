@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>stringToNumber</title>
+
+
+<script language="javascript">
+
+	function stringToNumber(price_p){
+	
+		var price_str = price_p;
+		var replace_str = '';
+	
+		
+		replace_str = price_str.replace('R$','');
+		replace_str = replace_str.replace('.','');
+		replace_str = replace_str.replace(',','.')
+		replace_str = replace_str.trim();
+		
+		number = Number(replace_str.replace(/[^0-9\.]+/g,''));
+		return number;
+		
+	}
+	
+	var a = 'R$10.023,56';
+	console.log(stringToNumber(a));
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
