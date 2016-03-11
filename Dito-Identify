@@ -1,0 +1,11 @@
+dito.identify({
+  id: dito.generateID('marcos.nogueira@dito.com.br'),
+  name: 'Marcos Nogueira',
+  email: 'marcos.nogueira@dito.com.br',
+  birthday: '1990-03-25',
+  gender: 'male'
+  data: {
+    marca_favorita: 'Armany',
+    origem_cadastro: 'Cadastre-se-já'
+  }
+});
